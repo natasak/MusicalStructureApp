@@ -1,5 +1,6 @@
 package com.example.natasa.musicalstructureapp;
 
+/** Gif image from: https://giphy.com/gifs/tony-sirico-206LP4kRMWd0Y  */
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
