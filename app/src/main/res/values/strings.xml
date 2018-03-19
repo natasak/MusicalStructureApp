@@ -9,4 +9,7 @@
 
     <!-- Category name for travelling [CHAR LIMIT=20] -->
     <string name="category_travelling">For travelling</string>
+
+    <!-- Now Playing [CHAR LIMIT=20] -->
+    <string name="now_playing">Now playing</string>
 </resources>

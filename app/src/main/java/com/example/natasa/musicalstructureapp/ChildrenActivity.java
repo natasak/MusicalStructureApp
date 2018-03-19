@@ -1,8 +1,12 @@
 package com.example.natasa.musicalstructureapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -25,6 +29,14 @@ public class ChildrenActivity extends AppCompatActivity {
         songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
         songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
         songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+
 
         /** Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
          adapter knows how to create layouts for each item in the list, using the
@@ -45,5 +57,22 @@ public class ChildrenActivity extends AppCompatActivity {
          1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter. */
         listView.setAdapter(adapter);
 
+
+
+        //event listeners
+        //ImageView play = (ImageView) findViewById(R.id.icon_play);
+
+        //Set a clicklistener on that View
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //Create a new intent to open the NowPlayingActivity
+                Intent nowPlayingIntent = new Intent(ChildrenActivity.this, NowPlayingActivity.class);
+
+                //Start the new activity
+                startActivity(nowPlayingIntent);
+            }
+        });
     }
 }

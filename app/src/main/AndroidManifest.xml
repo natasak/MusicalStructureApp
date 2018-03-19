@@ -44,6 +44,16 @@
                 android:value=".MainActivity"/>
         </activity>
 
+        <activity
+            android:name=".NowPlayingActivity"
+            android:label="@string/now_playing"
+            android:parentActivityName=".ChildrenActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ChildrenActivity"/>
+        </activity>
+
 
     </application>
 
