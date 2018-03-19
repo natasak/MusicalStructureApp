@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+
+    <!-- Category name for children songs [CHAR LIMIT=20] -->
+    <string name="category_children">Children Songs</string>
+
+    <!-- Category name for programming [CHAR LIMIT=20] -->
+    <string name="category_programming">For programming</string>
+
+    <!-- Category name for travelling [CHAR LIMIT=20] -->
+    <string name="category_travelling">For travelling</string>
+</resources>

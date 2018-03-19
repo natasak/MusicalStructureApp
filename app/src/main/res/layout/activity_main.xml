@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:orientation="vertical"
+    tools:context="com.example.natasa.musicalstructureapp.MainActivity">
+
+    <TextView
+        android:id="@+id/children"
+        style="@style/CategoryStyle"
+        android:background="@color/category_children"
+        android:text="@string/category_children" />
+
+    <TextView
+        android:id="@+id/programming"
+        style="@style/CategoryStyle"
+        android:background="@color/category_programming"
+        android:text="@string/category_programming" />
+
+    <TextView
+        android:id="@+id/travelling"
+        style="@style/CategoryStyle"
+        android:background="@color/category_travelling"
+        android:text="@string/category_travelling" />
+
+</LinearLayout>
