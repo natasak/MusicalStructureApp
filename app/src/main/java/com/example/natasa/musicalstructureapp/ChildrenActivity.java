@@ -16,6 +16,6 @@ public class ChildrenActivity extends AppCompatActivity {
 
         setContentView(R.layout.song_list);
 
-        
+
     }
 }
