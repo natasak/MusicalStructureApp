@@ -16,6 +16,17 @@ public class NowPlayingActivity extends AppCompatActivity {
 
         setContentView(R.layout.now_playing);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            TextView myTextView = (TextView)findViewById(R.id.key_artist_text_view);
+            TextView myTextView1 = (TextView)findViewById(R.id.key_title_text_view);
+            TextView myTextView2 = (TextView)findViewById(R.id.key_duration_text_view);
+            myTextView.setText(extras.getString("SONGARTIST"));
+            myTextView1.setText(extras.getString("SONGTITLE"));
+            myTextView2.setText(extras.getString("SONGDURATION"));
+            
+        }
+
         //get the data from previous activity and display it
         //Intent secondIntent = getIntent( );
         //String message = "Selected song is " + secondIntent.getStringExtra("song_selected");

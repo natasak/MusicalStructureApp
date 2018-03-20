@@ -62,19 +62,21 @@ public class ChildrenActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Create a new intent to open the NowPlayingActivity
-                //Intent nowPlayingIntent = new Intent(ChildrenActivity.this, NowPlayingActivity.class);
-
-                int itemPosition     = i;
 
                 //Get the data from the clicked item and send it to the new activity
-                Song itemValue = (Song) listView.getItemAtPosition(i);
-                //nowPlayingIntent.putExtra("song_selected", itemValue);
+                Song song = (Song) listView.getItemAtPosition(i);
+
+                //Create a new intent to open the NowPlayingActivity
+                Intent nowPlayingIntent = new Intent(ChildrenActivity.this, NowPlayingActivity.class);
+
+                nowPlayingIntent.putExtra("SONGTITLE", song.getTitle());
+
+                //int itemPosition     = i;
 
                 //Start the new activity
-                //startActivity(nowPlayingIntent);
+                startActivity(nowPlayingIntent);
 
-                Toast.makeText(getApplicationContext(),"Position :"+itemPosition+"  ListItem : " +itemValue, Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"Position :"+itemPosition+"  ListItem : " +itemValue, Toast.LENGTH_LONG).show();
             }
         });
     }

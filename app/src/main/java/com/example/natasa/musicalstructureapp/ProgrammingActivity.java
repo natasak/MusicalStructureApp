@@ -46,7 +46,7 @@ public class ProgrammingActivity extends AppCompatActivity {
         /** Find the ListView object in the view hierarchy of the {@link Activity}.
          There should be a ListView with the view ID called list, which is declared in the
          song_list layout file.*/
-        ListView listView = (ListView) findViewById(R.id.list);
+        final ListView listView = (ListView) findViewById(R.id.list);
 
         /** Make the ListView use the {@link ArrayAdapter} we created above, so that the
          ListView will display list items for each song in the list of songs.
@@ -59,8 +59,17 @@ public class ProgrammingActivity extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //Get the data from the clicked item and send it to the new activity
+                Song song = (Song) listView.getItemAtPosition(i);
+
                 //Create a new intent to open the NowPlayingActivity
                 Intent nowPlayingIntent = new Intent(ProgrammingActivity.this, NowPlayingActivity.class);
+
+                nowPlayingIntent.putExtra("SONGARTIST", song.getArtist());
+                nowPlayingIntent.putExtra("SONGTITLE", song.getTitle());
+                nowPlayingIntent.putExtra("SONGDURATION", song.getDuration());
+
+                //int itemPosition     = i;
 
                 //Start the new activity
                 startActivity(nowPlayingIntent);
