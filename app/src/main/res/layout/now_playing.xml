@@ -29,5 +29,5 @@
     <pl.droidsonroids.gif.GifTextView
         style="@style/DurationStyle"
         android:background="@drawable/singing" />
-    
+
 </LinearLayout>
