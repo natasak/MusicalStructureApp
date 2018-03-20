@@ -11,5 +11,10 @@ Features:
 
 # Screenshots
 
+| The beginning of the app | Step 1 | Step 2 |
+| ------------------------ | ------ | ------ |
+| ![Beginning](https://github.com/natasak/MusicalStructureApp/blob/master/screenshots/scr_1.png) | ![Step1](https://github.com/natasak/MusicalStructureApp/blob/master/screenshots/scr_2.png) | ![Step2](https://github.com/natasak/MusicalStructureApp/blob/master/screenshots/scr_3.png) |
 
-
+| The beginning of the app | Step 1 | Step 2 |
+| ------------------------ | ------ | ------ |
+| ![Beginning](https://github.com/natasak/MusicalStructureApp/blob/master/screenshots/scr_1.png) | ![Step1](https://github.com/natasak/MusicalStructureApp/blob/master/screenshots/scr_4.png) | ![Step2](https://github.com/natasak/MusicalStructureApp/blob/master/screenshots/scr_5.png) |
