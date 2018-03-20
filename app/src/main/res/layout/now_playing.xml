@@ -4,31 +4,30 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="center_horizontal"
+    android:background="@color/background_color"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/key_artist_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="key"/>
+        style="@style/ArtistStyle"
+        android:paddingTop="@dimen/padding10"
+        tools:text="Artist"/>
 
     <TextView
         android:id="@+id/key_title_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="key"/>
+        style="@style/TitleStyle"
+        android:paddingBottom="@dimen/padding10"
+        android:textColor="@color/category_programming"
+        tools:text="Title"/>
 
     <TextView
         android:id="@+id/key_duration_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="key"/>
+        style="@style/DurationStyle"
+        android:paddingBottom="@dimen/padding10"
+        tools:text="Duration"/>
 
     <pl.droidsonroids.gif.GifTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/singing"
-        />
-
-
+        style="@style/DurationStyle"
+        android:background="@drawable/singing" />
+    
 </LinearLayout>

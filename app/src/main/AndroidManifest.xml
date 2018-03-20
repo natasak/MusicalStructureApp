@@ -45,7 +45,5 @@
                 android:value=".ChildrenActivity"/>
         </activity>
 
-
     </application>
-
 </manifest>

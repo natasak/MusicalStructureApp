@@ -69,8 +69,6 @@ public class ProgrammingActivity extends AppCompatActivity {
                 nowPlayingIntent.putExtra("SONGTITLE", song.getTitle());
                 nowPlayingIntent.putExtra("SONGDURATION", song.getDuration());
 
-                //int itemPosition     = i;
-
                 //Start the new activity
                 startActivity(nowPlayingIntent);
             }

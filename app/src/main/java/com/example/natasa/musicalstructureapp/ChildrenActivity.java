@@ -71,12 +71,8 @@ public class ChildrenActivity extends AppCompatActivity {
 
                 nowPlayingIntent.putExtra("SONGTITLE", song.getTitle());
 
-                //int itemPosition     = i;
-
                 //Start the new activity
                 startActivity(nowPlayingIntent);
-
-                //Toast.makeText(getApplicationContext(),"Position :"+itemPosition+"  ListItem : " +itemValue, Toast.LENGTH_LONG).show();
             }
         });
     }

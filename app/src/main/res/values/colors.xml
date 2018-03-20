@@ -2,18 +2,15 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-
-    <!-- Background color for app -->
-    <color name="tan_background">#FFF7DA</color>
+    <color name="colorAccent">#ff6e40</color>
 
     <!-- Background color for the children category -->
-    <color name="category_children">#FD8E09</color>
+    <color name="category_children">#43a047</color>
 
     <!-- Background color for the programming category -->
-    <color name="category_programming">#379237</color>
+    <color name="category_programming">#2e7d32</color>
 
-    <!-- Background color for the travelling category -->
-    <color name="category_travelling">#8800A0</color>
+    <!-- Background color of the activity -->
+    <color name="background_color">#ffffff</color>
 
 </resources>

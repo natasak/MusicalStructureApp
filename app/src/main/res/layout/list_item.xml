@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center"
-    android:padding="16dp">
+    android:padding="@dimen/padding16">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -16,34 +16,24 @@
 
         <TextView
             android:id="@+id/artist_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
+            style="@style/ArtistStyle"
             tools:text="Artist" />
 
         <TextView
             android:id="@+id/song_title_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:paddingBottom="10dp"
+            style="@style/TitleStyle"
             tools:text="Song title" />
 
         <TextView
             android:id="@+id/duration_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/DurationStyle"
             tools:text="Duration of the song" />
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/icon_play"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
+        style="@style/iconPlayStyle"
         android:src="@drawable/ic_play" />
-
-
 
 </LinearLayout>
