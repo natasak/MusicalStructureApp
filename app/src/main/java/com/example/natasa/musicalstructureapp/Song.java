@@ -27,6 +27,16 @@ public class Song {
         mDuration = duration;
     }
 
+    /**
+     * Create a second Song object (constructor) with only one text,
+     * for those songs that don't have artist and duration.
+     *
+     * @param title is title of a song
+     */
+    public Song(String title) {
+        mTitle = title;
+    }
+
     /** Get the artist of a song */
     public String getArtist() {
         return mArtist;
