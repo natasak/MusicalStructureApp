@@ -8,10 +8,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class ChildrenActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +49,7 @@ public class ChildrenActivity extends AppCompatActivity {
         /** Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
          There should be a {@link ListView} with the view ID called list, which is declared in the
          song_list layout file.*/
-        ListView listView = (ListView) findViewById(R.id.list);
+        final ListView listView = (ListView) findViewById(R.id.list);
 
         /** Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
          {@link ListView} will display list items for each song in the list of songs.
@@ -60,10 +63,18 @@ public class ChildrenActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //Create a new intent to open the NowPlayingActivity
-                Intent nowPlayingIntent = new Intent(ChildrenActivity.this, NowPlayingActivity.class);
+                //Intent nowPlayingIntent = new Intent(ChildrenActivity.this, NowPlayingActivity.class);
+
+                int itemPosition     = i;
+
+                //Get the data from the clicked item and send it to the new activity
+                Song itemValue = (Song) listView.getItemAtPosition(i);
+                //nowPlayingIntent.putExtra("song_selected", itemValue);
 
                 //Start the new activity
-                startActivity(nowPlayingIntent);
+                //startActivity(nowPlayingIntent);
+
+                Toast.makeText(getApplicationContext(),"Position :"+itemPosition+"  ListItem : " +itemValue, Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -21,15 +21,18 @@ public class ProgrammingActivity extends AppCompatActivity {
         // Create a list of songs
         ArrayList<Song> songs = new ArrayList<Song>();
 
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
+        songs.add(new Song("Naughty Boy ft. Sam Smith", "La La La", "4:04"));
+        songs.add(new Song("Ellie Goulding", "Burn", "3:59"));
+        songs.add(new Song("Avicii", "Wake me up", "4:33"));
+        songs.add(new Song("Meghan Trainor", "All about that bass", "3:10"));
+        songs.add(new Song("Sia", "Chandelier", "3:52"));
+        songs.add(new Song("Adele", "Rolling in the deep", "3:54"));
+        songs.add(new Song("Pharrell Williams", "Happy", "4:07"));
+        songs.add(new Song("Sam Smith", "I'm not the only one", "4:40"));
+        songs.add(new Song("The Script ft. will.i.am", "Hall of fame", "3:54"));
+        songs.add(new Song("Pentatonix", "Thrift shop", "3:29"));
+        songs.add(new Song("Blake Shelton", "Footloose", "4:25"));
+        songs.add(new Song("Nickelback", "If today was your last day", "4:06"));
 
 
         /** Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
