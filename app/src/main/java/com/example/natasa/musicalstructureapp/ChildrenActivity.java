@@ -11,10 +11,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * Created by natasa on 16/03/18.
- */
-
 public class ChildrenActivity extends AppCompatActivity {
 
     @Override
@@ -26,17 +22,18 @@ public class ChildrenActivity extends AppCompatActivity {
         // Create a list of songs
         ArrayList<Song> songs = new ArrayList<Song>();
 
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-        songs.add(new Song("Romana kranjcan", "Racke na potepu", "2:34"));
-
+        songs.add(new Song("Twinkle, Twinkle Little Star"));
+        songs.add(new Song("Head & Shoulders, Knees & Toes"));
+        songs.add(new Song("Three Little Kittens"));
+        songs.add(new Song("Old Mac Donald Had A Farm"));
+        songs.add(new Song("Polly Put The Kettle On"));
+        songs.add(new Song("Frere Jacques"));
+        songs.add(new Song("Ring Around the Rosie"));
+        songs.add(new Song("Six Little Ducks"));
+        songs.add(new Song("Itsy Bitsy Spider"));
+        songs.add(new Song("My Bonnie Lies Over The Ocean"));
+        songs.add(new Song("Mary Had A Little Lamb"));
+        songs.add(new Song("Row, Row, Row Your Boat"));
 
         /** Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
          adapter knows how to create layouts for each item in the list, using the
@@ -57,12 +54,7 @@ public class ChildrenActivity extends AppCompatActivity {
          1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter. */
         listView.setAdapter(adapter);
 
-
-
-        //event listeners
-        //ImageView play = (ImageView) findViewById(R.id.icon_play);
-
-        //Set a clicklistener on that View
+        //Set a clicklistener on each item in that View
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override

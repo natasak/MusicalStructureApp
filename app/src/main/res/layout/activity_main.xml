@@ -21,10 +21,4 @@
         android:background="@color/category_programming"
         android:text="@string/category_programming" />
 
-    <TextView
-        android:id="@+id/travelling"
-        style="@style/CategoryStyle"
-        android:background="@color/category_travelling"
-        android:text="@string/category_travelling" />
-
 </LinearLayout>

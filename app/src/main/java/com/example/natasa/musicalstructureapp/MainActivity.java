@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         //Show the View that shows the selected category
         TextView children = (TextView)findViewById(R.id.children);
         TextView programming = (TextView)findViewById(R.id.programming);
-        TextView travelling = (TextView)findViewById(R.id.travelling);
 
         //Set a clicklistener on that View for children category
         children.setOnClickListener(new View.OnClickListener() {
@@ -44,18 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //for travelling
-        travelling.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                //Create a new intent to open the TravellingActivity
-                Intent travellingIntent = new Intent(MainActivity.this, TravellingActivity.class);
-
-                //Start the new activity
-                startActivity(travellingIntent);
-            }
-        });
 
     }
 }

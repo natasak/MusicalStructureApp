@@ -5,10 +5,7 @@
     <string name="category_children">Children Songs</string>
 
     <!-- Category name for programming [CHAR LIMIT=20] -->
-    <string name="category_programming">For programming</string>
-
-    <!-- Category name for travelling [CHAR LIMIT=20] -->
-    <string name="category_travelling">For travelling</string>
+    <string name="category_programming">Programming Songs</string>
 
     <!-- Now Playing [CHAR LIMIT=20] -->
     <string name="now_playing">Now playing</string>
