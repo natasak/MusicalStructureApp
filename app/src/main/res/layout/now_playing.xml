@@ -32,23 +32,17 @@
 
     <Button
         android:id="@+id/children_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        style="@style/buttonStyle"
         android:text="Back to children songs"/>
 
     <Button
         android:id="@+id/programming_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        style="@style/buttonStyle"
         android:text="Back to programming songs"/>
 
     <Button
         android:id="@+id/home_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        style="@style/buttonStyle"
         android:text="Home"/>
 
 </LinearLayout>
